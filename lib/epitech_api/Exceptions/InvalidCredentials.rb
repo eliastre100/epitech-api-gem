@@ -1,0 +1,3 @@
+class InvalidCredentials < SecurityError
+
+end

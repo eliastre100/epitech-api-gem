@@ -1,0 +1,3 @@
+class InvalidRights < SecurityError
+
+end
