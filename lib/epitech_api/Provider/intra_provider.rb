@@ -3,10 +3,10 @@ require 'cgi/cookie'
 require_relative '../Exceptions/invalid_credentials'
 require_relative '../user'
 
-class OfficeProvider
+class IntraProvider
 
-  def self.login(code)
-    uri = URI("https://intra.epitech.eu/auth/office365?code=#{code}&state=%2f")
+  def self.auto_login(code)
+    uri = URI("https://intra.epitech.eu/#{code}")
     response = Net::HTTP.get_response(uri)
     raise InvalidCredentials unless response.code.to_i == 302
 
