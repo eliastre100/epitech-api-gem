@@ -1,7 +1,7 @@
 require 'net/https'
 require 'cgi/cookie'
-require_relative '../Exceptions/InvalidCredentials'
-require_relative '../User'
+require_relative '../Exceptions/invalid_credentials'
+require_relative '../user'
 
 class OfficeProvider
 

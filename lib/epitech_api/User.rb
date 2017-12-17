@@ -1,4 +1,4 @@
-require_relative 'Exceptions/InvalidRights'
+require_relative 'Exceptions/invalid_rights'
 require 'json'
 
 class User
