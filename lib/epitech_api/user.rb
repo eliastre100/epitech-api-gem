@@ -1,10 +1,15 @@
-require_relative 'Exceptions/invalid_rights'
 require 'json'
+require_relative 'Exceptions/invalid_rights'
+require_relative 'gatherer'
 
 class User
 
   def initialize(token)
     @token = token
+  end
+
+  def gatherer
+    Gatherer.new @token
   end
 
   def info
