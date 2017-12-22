@@ -1,3 +1,5 @@
-class InvalidCredentials < SecurityError
+module EpitechApi
+  class InvalidCredentials < SecurityError
 
+  end
 end

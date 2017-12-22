@@ -1,3 +1,5 @@
-class InvalidRights < SecurityError
+module EpitechApi
+  class InvalidRights < SecurityError
 
+  end
 end
