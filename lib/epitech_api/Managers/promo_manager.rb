@@ -1,4 +1,4 @@
-require 'epitech_api/DataTypes/basic_user'
+require 'epitech_api/DataTypes/basic_student'
 
 module EpitechApi
   class PromoManager
@@ -70,7 +70,7 @@ module EpitechApi
     def convert_users(users)
       students = []
       users.each do |u|
-        students.push BasicUser.new(u['login'], u['prenom'], u['nom'], u['picture'], u['location'])
+        students.push BasicStudent.new(u['login'], u['prenom'], u['nom'], u['picture'], u['location'])
       end
       students
     end

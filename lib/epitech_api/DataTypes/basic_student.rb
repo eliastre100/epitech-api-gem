@@ -1,5 +1,5 @@
 module EpitechApi
-  class BasicUser
+  class BasicStudent
 
     attr_accessor :login, :first_name, :last_name, :location, :picture
 
