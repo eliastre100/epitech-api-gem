@@ -1,4 +1,4 @@
-require 'epitech_api/DataTypes/basic_student'
+require_relative '../DataTypes/basic_student'
 
 module EpitechApi
   class PromoManager

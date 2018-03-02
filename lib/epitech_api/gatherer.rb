@@ -1,6 +1,6 @@
-require 'epitech_api/DataTypes/promo'
-require 'epitech_api/Managers/promo_manager'
-require 'epitech_api/Managers/user_manager'
+require_relative 'DataTypes/promo'
+require_relative 'Managers/promo_manager'
+require_relative 'Managers/user_manager'
 
 
 module EpitechApi
